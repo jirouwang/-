@@ -1,0 +1,99 @@
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, li, ol, p, td, th, ul,button {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    color: #3c3c3c;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+a{
+    color: #3c3c3c;
+    text-decoration: none;
+    user-select: none;
+}
+i,em{
+    font-weight: bold;
+    margin: 0 2px;
+    font-style: normal;
+    font-weight: normal;
+}
+input,button{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+table{
+    border-collapse: collapse;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.layer{
+    width: 1230px;
+    margin: 0 auto;
+}
+
+/*fonticon*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*fonticon*/
+
+.cb0{
+    color: #b0b0b0;
+}
+.cff0036{
+    color: #ff0036;
+}
+.c999{
+    color: #999;
+}
+.ce54077{
+    color: #e54077!important;
+}
+.c427def{
+    color: #427def!important;
+}
+.relative{
+    position: relative;
+}
+.left45{
+    left: 45px;
+}
+.left33{
+    left: 33px;
+}
+.left22{
+    left: 22px;
+}
+.boxshadow{
+    border: 1px solid #eee;
+}

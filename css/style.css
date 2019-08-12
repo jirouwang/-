@@ -1,0 +1,722 @@
+@import 'reset.css';
+
+/* 头部导航 */
+#headNav{
+    background-color: #a9180a;
+    height: 32px;
+    color: #fff;
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+#headNav li{ /*搞不懂为什么后面的全部会继承*/
+    float: left;
+    line-height: 32px;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+#headNav li.active a:focus{
+    color: #eeba11;
+}
+#headNav li a{
+    color: #fff;
+    height: 32px;
+    display: block;
+    text-align: center;
+}
+#headNav li span{
+    font-size: 13px;
+}
+#headNav li span.icl{
+    margin-right: 3px;
+}
+#headNav li span.icr{
+    width: 6px;
+    height: 6px;
+}
+#headNav .devide{
+    margin: 0 -10px;
+    color: #b0b0b0;
+}
+#headNav .yHover:hover a{
+    color: #eeba11;
+}
+#headNav .rHovera:hover .uline{
+    color: #ff0036;
+    text-decoration-line: underline;
+}
+#headNav .rHover:hover{
+    margin: 0 -1px;
+    background-color: #fff;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+#headNav .rHover:hover .uline{
+    color: #ff0036;
+}
+#headNav .rHover:hover .rcover{
+    color: #ff0036;
+}
+#headNav .baobei{
+    box-sizing: border-box;
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    width: 100px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 9px 0;
+    display: none;
+    background-color: #fff;
+    z-index: 100;
+}
+#headNav .baobei a{
+    color: #000;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+}
+#headNav .baobei a:hover{
+    color: #ff0036;
+    text-decoration-line: underline;
+}
+#headNav .ad1:hover .baobei{
+    display: block;
+}
+#headNav .shoucang{
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    width: 88px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 9px 0;
+    background-color: #fff;
+    z-index: 100;
+    display: none;
+}
+#headNav .shoucang a{
+    color: #000;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+}
+#headNav .ad2:hover .shoucang{
+    display: block;
+}
+#headNav .shoucang a:hover{
+    color: #ff0036;
+    text-decoration-line: underline;
+}
+#headNav .phoneUser{
+    position: absolute;
+    width: 170px;
+    height: 178px;
+    left: -60%;
+    top: 22px;
+    border-top: #fff;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    display: none;
+}
+#headNav .phoneUser img{
+    width: 17s0px;
+    height: 170px;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+#headNav .phoneUser .triangle{
+    /* width: 10px;
+    height: 10px; */
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #fff;
+    z-index: 10;
+}
+#headNav .ad3:hover .phoneUser{
+    display: block;
+}
+#headNav .suport{
+    width: 142px;
+    color: #000;
+    position: absolute;
+    right: -1px;
+    top: 32px;
+    padding: 5px 5px; 
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    visibility: hidden;
+    background-color: #fff;
+    z-index: 100;
+}
+#headNav .suport .listHead{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+}
+#headNav .suport ul li{
+    height: 20px;
+    line-height: unset;
+    width: 50px;
+    padding: 0 10px;
+    cursor: auto;
+}
+#headNav .suport a{
+    text-align: left;
+    line-height: 20px;
+    color: #666;
+}
+#headNav .suport a:hover{
+    color: #ff0036;
+    text-decoration-line: underline;
+}
+#headNav .suport ul{
+    display: inline-block;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 7px;
+    width: 140px;
+}
+#headNav .ad4:hover .suport{
+    visibility: visible;
+}
+#headNav .nav{
+    box-sizing: border-box;
+    position: absolute;
+    color: #000;
+    right: -1px;
+    top: 32px;
+    width: 1180px;
+    height: 165px;
+    padding: 25px 10px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    display: none;
+    background-color: #fff;
+    z-index: 100;
+}
+#headNav .ad5:hover .nav{
+    display: block;
+}
+#headNav .nav a{
+    color: #000;
+    text-align: left;
+}
+#headNav .nav table{
+    padding: 0 0 0 25px;
+    height: 120px;
+    display: inline-block;
+    border-right: 1px solid #eee;
+}
+#headNav .nav table .th1{
+    color: #f56a00;
+    font-size: 16px;
+}
+#headNav .nav table .th2{
+    color: #2263d4;
+    font-size: 16px;
+}
+#headNav .nav table td{
+    width: 80px;
+}
+#headNav .nav ul{
+    width: 160px;
+    margin-left: 20px;
+}
+#headNav .nav ul .helpHead{
+    font-size: 16px;
+    color: #666;
+}
+#headNav .nav a:hover{
+    color: #ff0036;
+    text-decoration-line: underline;
+}
+#headNav .nav table td span{
+    width: 8px;
+    height: 8px;
+    color: #68be00;
+    position: absolute;
+    top: -9px;
+}
+#headNav .nav table td span.hot{
+    color: #ff4a18;
+}
+/*搜索栏*/
+#headSearch{
+    height: 130px;
+    z-index: 1;
+}
+#headSearch .search li{
+    float: left;
+}
+#headSearch .tianmao h1{
+    position: relative;
+    left: -15%;
+    width: 300px;
+    height: 130px;
+    background: url(../images/TMALL.gif) no-repeat;
+    font-size: 0;
+}
+#headSearch .search{
+    width: 625px;
+    height: 130px;
+    margin: 0 auto;
+}
+#headSearch .search .searchBox{
+    width: 625px;
+    height: 130px;
+    box-sizing: border-box;
+    padding-top: 38px; 
+}
+#headSearch .search .searchBox .searchInput input{
+    box-sizing: border-box;
+    width: 490px;
+    height: 40px;
+    border: 2px solid #ff0036;
+    text-indent: 6px;
+    font-size: 18px;
+    vertical-align: middle;
+    background-color: transparent;
+}
+#headSearch .search .searchBox .searchInput input:focus .placeHolder{
+    color: rgba(102, 102, 102, .9);
+    background-color: #000;
+}
+#headSearch .search .searchBox .searchInput button{
+    box-sizing: border-box;
+    width: 135px;
+    height: 40px;
+    vertical-align: middle;
+    background-color: #ff0036;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#headSearch .searchInput{
+    position: relative;
+}
+#headSearch .placeHolder{
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+    left: 10px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, .5);
+    z-index: -1;
+}
+#headSearch .placeHolder em,p{
+    margin-right: 5px;
+}
+#headSearch .searchAd{
+    margin-top: 5px;
+}
+#headSearch .searchAd a{
+    font-size: 14px;
+}
+#headSearch .searchAd .devide{
+    margin: 0 10px;
+    font-size: 14px;
+}
+/* 一级菜单 */
+#firstMenu{
+    height: 36px;
+    border-bottom: 2px solid #ff0036;
+}
+#firstMenu h2{
+    width: 200px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background-color: #c60a0a;
+    cursor: pointer;
+    user-select: none;
+}
+#firstMenu li{
+    float: left;
+    line-height: 36px;
+    padding: 0 8px;
+}
+#firstMenu li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+}
+#firstMenu li img{
+    width: 100px;
+    height: 30px;
+}
+#firstMenu li a:hover{
+    color: #ff0036;
+}
+/* 二级菜单 */
+#secondMenu{
+    height: 500px;
+    position: relative;
+}
+#secondMenu .secondMenu-ad{
+    width: 200px;
+    height: 500px;
+    background-color: rgba(0,0,0,.5);
+    position: relative;
+    z-index: 10;
+}
+#secondMenu span{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 3px;
+}
+#secondMenu .secondMenu-ad >li{
+    height: 31.2px;
+    line-height: 31.2px;
+    padding: 0 12px;
+}
+#secondMenu .secondMenu-ad .iconfont{
+    color: #fff;
+    opacity: .7;
+    margin-right: 10px;
+    font-size: 16px;
+}
+#secondMenu .secondMenu-ad a{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+}
+#secondMenu .secondMenu-ad >li:hover{
+    background-color: #fff;  
+    transition-delay: .2s;
+}
+/* #secondMenu .secondMenu-ad li .aRed:hover{   //关于不同条件触发tansition-delay被覆盖的问题
+    color: #e54007;
+}
+#secondMenu .secondMenu-ad li .aBlue:hover{
+    color: #4d85f0;
+}
+#secondMenu .secondMenu-ad li .aYellow:hover{
+    color: #f8a140;
+}
+#secondMenu .secondMenu-ad li .aLightblue:hover{
+    color: #48cbb5;
+} */
+#secondMenu .secondMenu-ad li.red:hover >a{
+    color: #e54007;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.red:hover >span{
+    color: #e54007;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.blue:hover >a{
+    color: #4d85f0;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.blue:hover >span{
+    color: #4d85f0;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.yellow:hover >a{
+    color: #f8a140;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.yellow:hover >span{
+    color: #f8a140;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.lightBlue:hover >a{
+    color: #48cbb5;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+#secondMenu .secondMenu-ad li.lightBlue:hover >span{
+    color: #48cbb5;
+    font-weight: bold;
+    transition-delay: .2s;
+}
+/* 三级菜单 */
+#secondMenu .secondMenu-ad .dress:hover .thirdMenu-dress{
+    visibility: visible;
+}
+#secondMenu .secondMenu-ad .mantop:hover .thirdMenu-mantop{
+    visibility: visible;
+}
+
+#secondMenu .thirdMenu{
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #fafafa;
+    overflow: hidden;
+    visibility: hidden;
+    transition-delay: .2s;
+    z-index: 20;
+}
+#secondMenu .thirdMenu .menuList{
+    width: 585px;
+    padding: 10px 30px;
+    background-color: #fff;
+}
+#secondMenu .thirdMenu .menuList .menuItem{
+    padding-top: 8px;
+    border-bottom: 1px solid #eee;
+}
+#secondMenu .thirdMenu .menuList .menuItem dt{
+    font-size: 14px;
+    font-weight: bold;
+    width: 71px;
+    margin-right: 26px;
+    text-align: justify;
+    vertical-align: top;
+    line-height: 28px;
+    display: inline-block;
+}
+#secondMenu .thirdMenu .menuList .menuItem dt span{
+    color: #333;
+    margin-right: 0;
+    font-size: 10px;
+}
+#secondMenu .thirdMenu .menuList .menuItem dd{
+    width: 482px;
+    height: 22px;
+    line-height: 29px;
+    display: inline-block;
+    /* padding-bottom: 14px; */
+    margin-bottom: -5px;
+}
+#secondMenu .thirdMenu .menuList a{
+    color: #000;
+    margin-right: 9px;
+    word-break: keep-all;
+    height: 22px;
+    line-height: 22px;
+}
+#secondMenu .thirdMenu-dress .menuList a:hover{
+    color: #e54077;
+}
+
+#secondMenu .thirdMenu-mantop .menuList a:hover{
+    color: #427def;
+}
+
+#secondMenu .thirdMenu .menuAd{
+    width: 195px;
+    height: 480px;
+    margin: 10px 0 0 10px;
+}
+#secondMenu .thirdMenu .menuAd a{
+    width: 90px;
+    height: 45px;
+    margin-bottom: 3px;
+    margin-right: 5px;
+    display: inline-block;
+}
+#secondMenu .thirdMenu .menuAd img{
+    width: 90px;
+    height: 42px;
+}
+#secondMenu .thirdMenu .menuAd .excellent{
+    width: 189px;
+    height: 87px;
+    padding-top: 12px;
+}
+#secondMenu .thirdMenu .menuAd .excellent img{
+    width: 189px;
+    height: 87px;
+}
+#secondMenu .thirdMenu .menuAd a:hover{
+    opacity: .7;
+}
+/* 轮播图 */
+#secondMenu .banner{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+#secondMenu .banner .bannerList{
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    transition: all 0.6s linear;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+#secondMenu .banner .bannerLists .layer{
+    position: relative;
+}
+#secondMenu .banner .bannerLists .layer a:first-child{
+    width: 220px;
+    height: 235px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+#secondMenu .banner .cgPoints{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 30;
+    transform: translateX(-50%);
+}
+#secondMenu .banner .cgPoints span{
+    width: 25px;
+    height: 5px;
+    background-color: #fff;
+    margin-right: 4px;
+    opacity: .3;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+/* 主题内容 */
+#content .firstAd{
+    height: 250px;
+    width: 100%;
+    margin: 10px 0;
+    display: inline-block;
+    transition: .5s;
+}
+#content .firstAd:hover{
+    box-shadow: 0 5px 5px #b0b0b0;
+    transform: translateY(-1px);
+}
+#content .firstAd img{
+    height: 250px;
+    width: 100%;
+}
+#content .alibabavip{
+    height: 370px;
+    width: 100%;
+    background-color: #fff;
+    white-space: nowrap;
+    margin: 10px 0;
+    display: inline-block;
+}
+#content .alibabavip .midAd,.rightAd{
+    height: 370px;
+    width: 485px;
+}
+#content .alibabavip .leftAd{
+    height: 370px;
+    width: 234px;
+    margin-right: 13px;
+}
+#content .alibabavip .bigad img{
+    width: 485px;
+    height: 316px;
+}
+#content .alibabavip img{
+    width: 234px;
+    height: 316px;
+}
+#content .alibabavip img:hover{
+    opacity: .6;
+}
+#content .alibabavip .adtop{
+    height: 55px;
+    line-height: 55px;
+}
+#content .alibabavip .adtop .zn{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    display: inline-block;
+}
+#content .alibabavip .adtop .en{
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    display: inline-block;
+}
+#content .alibabavip .adtop a{
+    margin-right: 14px;
+    font-size: 17px;
+    color: #666;
+    height: 55px;
+    /* vertical-align: middle; */
+}
+#content .alibabavip .adtop a span{
+    font-size: 18px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+#content .layer>table{
+    margin: 10px auto;
+    display: inline-block;
+}
+#content .layer>table td{
+    width: 123px;
+    height: 108px;
+    border: 1px solid #eee;
+    position: relative;
+}
+#content .layer>table a{
+    width: 123px;
+    height: 108px;
+}
+#content .layer>table img{
+    width: 100px;
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+#content .layer>table td:hover .hide{
+    opacity: 1;
+    transition-duration: .3s;
+}
+#content .layer>table td>.hide{
+    width: 122px;
+    height: 108px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    left: 0; 
+    opacity: 0;
+}
+#content .layer>table td>.hide a{
+    width: 122px;
+    height: 108px;
+    display: inline-block;
+}
+#content .layer>table td>.hide .preferential,.in{
+    display: block;
+    color: #fff;
+    text-align: center; 
+}
+#content .layer>table td>.hide .preferential{
+    height: 60px;
+    line-height: 90px;
+}
+#content .layer>table td>.hide .in{
+    height: 15px;
+    line-height: 15px;
+}
+#content .layer>table td>.hide .in i{
+    width: 52px;
+    background-color: #000;
+    display: inline-block;
+    font-size: 10px;
+    background-color: #FF0036;
+    border-radius: 10px;
+}
+
+
